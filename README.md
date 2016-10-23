@@ -3,5 +3,5 @@ Sistema de questionário para compra de imóveis.
 
 ##Instruções
 
-1. Importe o arquivo de banco de dados.
+1. Importe o arquivo de banco de dados;
 2. Aproveite.
