@@ -1,5 +1,5 @@
 # ZapMoveis
-Sistema de questionário para compra de imóveis.
+Sistema de questionário para aquisição de imóveis.
 
 ##Instruções
 
