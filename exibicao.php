@@ -49,7 +49,7 @@
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
                     <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
                 </button>
-                <a class="navbar-brand page-scroll" href="#page-top">Sua Escolha Certa</a>
+                <a class="navbar-brand page-scroll" href="index.php">Sua Escolha Certa</a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
@@ -71,6 +71,9 @@
 				<img src="img\<?php echo $_SESSION['id'] ?>.jpg" width= 480 height= 340> <br> <br>
 
 				<p> <?php echo $_SESSION['descricao'] ?> </p>
+				
+				<a href="inicio.php" class="btn btn-primary">Refazer Questionário</a>
+
 			</div>
 		</div>
     

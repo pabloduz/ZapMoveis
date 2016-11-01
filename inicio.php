@@ -1,7 +1,7 @@
 <?php
-	if(!isset($_SESSION)) {			
+	if(!isset($_SESSION)) {					
 		session_start();
-		
+				
 		$_SESSION['opcao']= [];
 		$_SESSION['pos']= 0;
 
@@ -10,7 +10,7 @@
 		$_SESSION['posicao']= 0;
 		
 		$_SESSION['descricao']= "";
-		$_SESSION['condicao']= [0,0,0,0];
+		$_SESSION['condicao']= [0,0,0,0,0,0];
 
 	}		
 	
