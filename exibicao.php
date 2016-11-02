@@ -72,7 +72,8 @@
 
 				<p> <?php echo $_SESSION['descricao'] ?> </p>
 				
-				<a href="inicio.php" class="btn btn-primary">Refazer Questionário</a>
+				<a href="inicio.php" class="btn btn-primary">Procurar outro imóvel</a>
+				
 
 			</div>
 		</div>

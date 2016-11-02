@@ -87,7 +87,7 @@
 			
 			if ($_SESSION['opcao'][9] == "1"){
 
-				$_SESSION['descricao'] = $_SESSION['descricao'] . ", fornecendo proximidade à praia.";
+				$_SESSION['descricao'] = $_SESSION['descricao'] . ", fornecendo proximidade à praia ";
 			}
 			else if ($_SESSION['opcao'][9] == "2") {
 				$_SESSION['descricao'] = $_SESSION['descricao'] . ", não fornecendo proximidade à praia ";
