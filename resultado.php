@@ -24,47 +24,50 @@
 	else if ($_SESSION['opcao'][2] == "2"){
 		
 		$_SESSION['descricao'] = $_SESSION['descricao'] . " com aparência clássica";
-	} 
+	}
+	else{
+		$_SESSION['descricao'] = $_SESSION['descricao'] . " com aparência sofisticada";
+	}
 	
 	if ($_SESSION['opcao'][3] == "1"){
 		
 		$_SESSION['descricao'] = $_SESSION['descricao'] . " em local de clima quente";
 	}
-	else if ($_SESSION['opcao'][2] == "2"){
+	else if ($_SESSION['opcao'][3] == "2"){
 		
 		$_SESSION['descricao'] = $_SESSION['descricao'] . " em local de clima temperado";
 	} 
 	else{
-		$_SESSION['descricao'] =  $_SESSION['descricao'] . " em local de clima agradável";
+		$_SESSION['descricao'] =  $_SESSION['descricao'] . " em local de clima agradável durante o ano";
 	}
 	
 	if ($_SESSION['opcao'][4] == "1"){
 		
-		$_SESSION['descricao'] = $_SESSION['descricao'] . " com a localização na zona rural";
+		$_SESSION['descricao'] = $_SESSION['descricao'] . " com localização na zona rural";
 	}
 	else if ($_SESSION['opcao'][4] == "2") {
 		
-		$_SESSION['descricao'] = $_SESSION['descricao'] . " com a localização na zona urbana";
-	}
-	else{
-		$_SESSION['descricao'] = $_SESSION['descricao'] . " com a localização em zona adequada";
-	
+		$_SESSION['descricao'] = $_SESSION['descricao'] . " com localização na zona urbana";
 	}
 	
 	if ($_SESSION['opcao'][5] == "1"){
 		
-		$_SESSION['descricao'] = $_SESSION['descricao'] . ", possuindo pelo menos dois quartos";
+		$_SESSION['descricao'] = $_SESSION['descricao'] . ", dispondo de pelo menos dois quartos";
 	}
 	else {
-		$_SESSION['descricao'] = $_SESSION['descricao'] . ", possuindo mais de dois quartos";
+		$_SESSION['descricao'] = $_SESSION['descricao'] . ", dispondo de mais de dois quartos";
 	}
 	
 	if ($_SESSION['opcao'][6] == "1"){
 		
 		$_SESSION['descricao'] = $_SESSION['descricao'] . " e vaga de estacionamento.";
 	}
-	else {
+	else if ($_SESSION['opcao'][6] == "2") {
+		
 		$_SESSION['descricao'] = $_SESSION['descricao'] . " e dispensando vaga de estacionamento.";
+	}
+	else{
+		$_SESSION['descricao'] = $_SESSION['descricao'] . " e disponibilizando vaga de estacionamento.";
 	}
 	
 	$aleatorio= rand(1,2);
@@ -149,22 +152,22 @@
 			$_SESSION['opcao'][2]= $aleatorio;
 		}			
 	
-		if($_SESSION['opcao'][9] == 0){
-			$_SESSION['opcao'][9]= $aleatorio;
+		if($_SESSION['opcao'][6] == 0){
+			$_SESSION['opcao'][6]= $aleatorio;
 		}
 	
-		if($_SESSION['opcao'][10] == 0){
-			$_SESSION['opcao'][10]= $aleatorio;
+		if($_SESSION['opcao'][8] == 0){
+			$_SESSION['opcao'][8]= $aleatorio;
 		}	
 		
 		$modelo= $_SESSION['opcao'][0]; 
 		$valor= $_SESSION['opcao'][1];
 		$estilo= $_SESSION['opcao'][2]; 
+		$garagem= $_SESSION['opcao'][6];
 		$piscina= $_SESSION['opcao'][8];
-		$garagem= $_SESSION['opcao'][9];
 		
 		
-		$sql = "select id from imoveis where modelo = '$modelo' and valor = '$valor' and estilo= '$estilo' and piscina= '$piscina' and garagem= '$garagem'";
+		$sql = "select id from imoveis where modelo = '$modelo' and valor = '$valor' and estilo= '$estilo' and garagem= '$garagem' and piscina= '$piscina'";
 		$resultado= $db->query($sql);
 		
 		$imovel = $resultado->fetch(PDO::FETCH_ASSOC);
@@ -298,7 +301,7 @@
 			$resultado= $db->query($sql);
 		
 			$imovel = $resultado->fetch(PDO::FETCH_ASSOC);
-			$imovel= $imovel['id'];	
+			$imovel= $imovel['id'];
 		
 			$_SESSION['id']= $imovel;
 			

@@ -173,11 +173,11 @@ header .header-content .header-content-inner h1 {
   font-size: 30px;
 }
 header .header-content .header-content-inner hr {
-  margin: 30px auto;
+  margin: 25px auto;
 }
 header .header-content .header-content-inner p {
   font-weight: 300;
-  color: rgba(255, 255, 255, 0.7);
+  color: rgba(255, 255, 255, 0.9);
   font-size: 16px;
   margin-bottom: 50px;
 }
@@ -204,7 +204,7 @@ header .header-content .header-content-inner p {
   header .header-content .header-content-inner p {
     font-size: 18px;
 	font-weight: bold;
-    max-width: 80%;
+    max-width: 90%;
     margin-left: auto;
     margin-right: auto;
   }
@@ -414,4 +414,8 @@ img::-moz-selection {
 }
 body {
   webkit-tap-highlight-color: #222222;
+}
+
+.select-method{
+	margin-right: 40px;
 }
