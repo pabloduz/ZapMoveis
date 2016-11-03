@@ -88,7 +88,7 @@
 				</ul>
 				</p>
 				<input type="submit" class="btn btn-primary" value="Avançar" label= "Avançar">
-				<a href="index.php" class="btn btn-primary">Voltar</a> </form>
+				<a href="index.php" class="btn btn-primary">Voltar</a> </form> </hr>
             </div>
         </div>
     </header>

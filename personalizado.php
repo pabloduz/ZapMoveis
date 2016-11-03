@@ -78,18 +78,6 @@
 			$_SESSION['condicao'][4] = 1;			
 
 		}
-		
-		if ($_SESSION['opcao'][5] == "1"){
-
-			$_SESSION['questio'][]= "Escolha a quantidade de quartos.";
-			$_SESSION['questio'][]= "Até 2 ";
-			$_SESSION['questio'][]= "3 ou mais ";
-			$_SESSION['questio'][]= "Sem preferência.";
-			
-			$_SESSION['indice'] += 1;
-			$_SESSION['condicao'][5] = 1;			
-
-		}
 	}
 	
 	if (empty($_SESSION['questio'])){

@@ -17,16 +17,15 @@
 		echo "<script>location.href='questionario.php';</script>";
 	}
 	
-	
 	else if ($_SESSION['pos'] == "2"){
-		$_SESSION['info'] = "Qual a sua idade?";
-		$_SESSION['o1pcao'] = "Até 30 anos ";
-		$_SESSION['o2pcao'] = "Mais de 30 anos ";
+		$_SESSION['info'] = "Você é receptivo a novas tecnologias?";
+		$_SESSION['o1pcao'] = "Sim ";
+		$_SESSION['o2pcao'] = "Não ";
 		$_SESSION['o3pcao'] = "Sem certeza.";
 				
 		echo "<script>location.href='questionario.php';</script>";
-	}
-	
+	}	
+
 	else if ($_SESSION['pos'] == "3"){
 		$_SESSION['info'] = "Qual clima lhe agrada mais?";
 		$_SESSION['o1pcao'] = "Tropical ";
@@ -46,7 +45,7 @@
 	}	
 	
 	else if ($_SESSION['pos'] == "5"){
-		$_SESSION['info'] = "Escolha a quantidade de pessoas.";
+		$_SESSION['info'] = "Escolha a quantidade de pessoas habitando.";
 		$_SESSION['o1pcao'] = "1 a 3 ";
 		$_SESSION['o2pcao'] = "4 ou mais ";
 		$_SESSION['o3pcao'] = "Sem certeza.";

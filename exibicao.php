@@ -72,7 +72,7 @@
 
 				<p> <?php echo $_SESSION['descricao'] ?> </p>
 				
-				<a href="inicio.php" class="btn btn-primary">Procurar outro imóvel</a>
+				<a href="inicio.php" class="btn btn-primary">Pesquisar Novamente</a>
 				
 
 			</div>
